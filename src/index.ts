@@ -1,5 +1,3 @@
-const testDiv = document.createElement("div");
-
-const app = () => document.body.append(testDiv);
+const app = () => document.body.append(document.createElement("div"));
 
 app();
