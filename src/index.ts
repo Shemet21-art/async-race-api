@@ -1,3 +1,5 @@
-const app = () => document.body.append(document.createElement("div"));
+import wrapperPage from "./page/wrapperPage";
+
+const app = () => document.body.append();
 
 app();

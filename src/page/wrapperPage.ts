@@ -21,7 +21,7 @@ const wrapperPage = () => {
   const navigation = document.createElement("div");
   navigation.classList.add("navigation");
 
-  const pageStructyre = {
+  const pageStructure = {
     wrapper,
     controls,
     carageCars,
@@ -30,7 +30,7 @@ const wrapperPage = () => {
     navigation,
   };
 
-  return pageStructyre;
+  return pageStructure;
 };
 
 export default wrapperPage;
