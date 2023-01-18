@@ -1,3 +1,14 @@
+export interface GetCars {
+  data: Car[];
+  count?: string;
+}
+
+export interface Car extends HTMLElement {
+  name: string;
+  color: string;
+  id: string;
+}
+
 export type EngineStatus = "started" | "stopped";
 
 export type Direction = "next" | "prev";
