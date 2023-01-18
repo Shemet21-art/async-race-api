@@ -1,5 +1,5 @@
-import wrapperPage from "./page/wrapperPage";
+import render from "./render/render";
 
-const app = () => document.body.append();
+const app = () => render();
 
 app();

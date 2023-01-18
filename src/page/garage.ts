@@ -1,6 +1,6 @@
 import { pageStructure } from "../model/model";
 
-export const renderControls = (wrap: pageStructure) => {
+export const renderControls = (pageStructure: pageStructure) => {
   const createButtons = document.createElement("div");
   createButtons.classList.add("buttons-group");
   const raceButtons = document.createElement("div");
@@ -43,7 +43,15 @@ export const renderControls = (wrap: pageStructure) => {
 
   raceButtons.append(startRaceButton, resetRaceButton);
 
-  wrap.controls.append(createButtons, raceButtons);
+  pageStructure.controls.append(createButtons, raceButtons);
 
-  return wrap.controls;
+  return pageStructure.controls;
+};
+
+export const renderGarage = (pageStructure: pageStructure) => {
+  const bordGarage = renderControls(pageStructure);
+
+  pageStructure.wrapper.append(bordGarage);
+
+  document.body.append(pageStructure.wrapper);
 };
